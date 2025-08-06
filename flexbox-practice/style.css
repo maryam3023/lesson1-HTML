@@ -1,0 +1,46 @@
+.container{ 
+    height: 100vh;
+    display: flex;
+    gap:25px;
+    place-content:center flex-end ;
+    flex-flow : row wrap;
+    
+    /* what is flex wrap doing */
+
+
+}
+
+ /* .box-2{
+    flex : 2 1 30em;
+} */
+
+
+/*  why did  box 1 and 2 come out the same size */
+
+
+/* .box-1 { 
+    flex: 1 1 30em; 
+}
+
+.box-3 {
+
+    flex: 1 1 10em;
+}   */
+
+[class^="box"]{
+    width: 140px;
+    height:140px;
+    background-color: pink;
+    border: 2px solid black;
+    font-size: 65px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* display: flex is always about how the children are arranged inside a parent.
+
+So when you put it in .box-1, it arranges the letter (inside the box).
+
+When you put it in .container, it arranges the boxes (inside the container). */
